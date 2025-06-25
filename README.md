@@ -26,3 +26,9 @@ This project predicts whether a person's income exceeds $50K/year using ML algor
 ## 📁 How to Run
 - Open income_prediction_ML.ipynb in Google Colab
 - Run cells step-by-step
+- 
+- ## 📇 Connect With Me
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/thoiba-saleem/)
+- 📬 Email: thoibasaleem389@gmail.com
+- 💻 GitHub: [ThoibaSaleem](https://github.com/ThoibaSaleem)

@@ -23,7 +23,7 @@ Predict whether a person earns **more than \$50K per year** based on demographic
 
 ## 🖼 Preview
 
-![App Screenshot](screenshot.png)
+![Screenshot](https://github.com/user-attachments/assets/c8ee9f30-d039-4015-8d65-31bd30e15329)
 
 
 ---

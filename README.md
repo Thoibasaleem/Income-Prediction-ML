@@ -17,16 +17,14 @@ Predict whether a person earns **more than \$50K per year** based on demographic
 ---
 
 ## 🚀 Live Demo
-
-> _(Coming Soon)_ Will be hosted on **Streamlit Cloud** or Hugging Face Spaces.  
-> **[View Demo](#)**
+[**Try the App Here →**](https://income-prediction-ml-jqdcoaxciev89y6h6t22o7.streamlit.app/)
 
 ---
 
 ## 🖼 Preview
 
-> Add screenshot after hosting  
-> `![UI Preview](screenshot.png)`
+![App Screenshot](screenshot.png)
+
 
 ---
 

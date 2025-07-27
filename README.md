@@ -1,4 +1,4 @@
-# 💸 Income Prediction Using Machine Learning + Streamlit Web App
+# 💸 Incometer: Income Prediction Tool
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-Deployment-brightgreen)
@@ -23,7 +23,7 @@ Predict whether a person earns **more than \$50K per year** based on demographic
 
 ## 🖼 Preview
 
-![Screenshot](https://github.com/user-attachments/assets/c8ee9f30-d039-4015-8d65-31bd30e15329)
+![Screenshot](https://github.com/user-attachments/assets/0531032c-7709-4d1e-b1c2-0117589712e1)
 
 
 ---

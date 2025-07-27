@@ -67,6 +67,11 @@ Predict whether a person earns **more than \$50K per year** based on demographic
 
 ---
 
+📊 Dataset Info
+Source: UCI Adult Census Income Dataset
+Features: Age, Workclass, Education, Marital Status, Occupation, Hours per Week, etc.
+Target: Income > 50K or ≤ 50K
+
 ##  Key Steps in Notebook
 
 1. **Data Cleaning**: Missing values, whitespace removal in categorical features  

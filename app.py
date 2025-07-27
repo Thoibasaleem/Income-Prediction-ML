@@ -78,17 +78,23 @@ with col1:
         ])
 
 # ---- Create DataFrame ----
-input_data = pd.DataFrame([[
-    age, workclass, education, education_num,
-    marital_status, occupation, relationship,
-    race, sex, capital_gain, capital_loss,
-    hours_per_week, native_country
-]], columns=[
-    "age", "workclass", "education", "education.num",
-    "marital.status", "occupation", "relationship",
-    "race", "sex", "capital.gain", "capital.loss",
-    "hours.per.week", "native.country"
-])
+# ---- Create DataFrame ----
+input_data = pd.DataFrame([{
+    "age": age,
+    "workclass": workclass,
+    "education": education,
+    "education.num": education_num,        # must match training
+    "marital.status": marital_status,      # must match training
+    "occupation": occupation,
+    "relationship": relationship,
+    "race": race,
+    "sex": sex,
+    "capital.gain": capital_gain,          # must match training
+    "capital.loss": capital_loss,          # must match training
+    "hours.per.week": hours_per_week,      # must match training
+    "native.country": native_country       # must match training
+}])
+
 
 # ---- Prediction ----
 with col2:

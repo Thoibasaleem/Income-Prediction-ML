@@ -101,7 +101,6 @@ Income-Prediction-ML/
   - Model training & evaluation
 
 ### Run Streamlit UI (Prediction)
-```bash
 # Clone repo
 git clone https://github.com/Thoibasaleem/Income-Prediction-ML.git
 cd Income-Prediction-ML

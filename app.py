@@ -100,8 +100,8 @@ input_data = pd.DataFrame([{
 with col2:
     st.subheader("Prediction")
     if st.button("Predict Income 🚀"):
-        prediction = pipeline.predict(input_data)[0]
-        result = ">50K" if prediction in [">50K", 1] else "<=50K"
+        proba = pipeline.predict_proba(input_data)[0][1]  # probability of >50K
+        result = ">50K" if proba >= 0.4 else "<=50K"
 
         if result == ">50K":
             st.markdown(

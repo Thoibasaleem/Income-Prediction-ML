@@ -6,11 +6,20 @@ import joblib
 pipeline = joblib.load("income_pipeline.pkl")
 
 # ---- Page Config ----
-st.set_page_config(page_title="Income Predictor", page_icon="💰", layout="wide")
+st.set_page_config(page_title="Incometer", page_icon="💰", layout="wide")
 
 # ---- Title Section ----
-st.markdown("<h1 style='text-align:center; color:#4CAF50;'>Income Prediction App 💵</h1>", unsafe_allow_html=True)
-st.markdown("<p style='text-align:center;'>Predict whether annual income is >50K or <=50K based on demographics.</p>", unsafe_allow_html=True)
+st.markdown("""
+<h1 style='text-align:center; color:#4CAF50; font-size:65px; font-weight:900;'>
+    Incometer 💵
+</h1>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<p style='text-align:center; font-size:20px; color:#555;'>
+    Predict Your Earnings Potential Instantly.
+</p>
+""", unsafe_allow_html=True)
 
 # ---- Layout: Two Columns ----
 col1, col2 = st.columns([2, 1])

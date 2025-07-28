@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load pipeline
-pipeline = joblib.load("income_pipeline.pkl")
+pipeline = joblib.load("income_pipeline_balanced.pkl")
 
 # ---- Page Config ----
 st.set_page_config(page_title="Incometer", page_icon="💰", layout="wide")
@@ -92,16 +92,27 @@ input_data = pd.DataFrame([{
     "capital.gain": capital_gain,          # must match training
     "capital.loss": capital_loss,          # must match training
     "hours.per.week": hours_per_week,      # must match training
-    "native.country": native_country       # must match training
+    "native.country": native_country,
+    "fnlwgt": 1                             # <-- Add dummy value
 }])
+      # must match training
 
+st.write("DEBUG: Input Data")
+st.write(input_data)
+
+proba = pipeline.predict_proba(input_data)[0][1]
+st.write("DEBUG: Probability of >50K =", proba)
 
 # ---- Prediction ----
 with col2:
     st.subheader("Prediction")
     if st.button("Predict Income 🚀"):
         proba = pipeline.predict_proba(input_data)[0][1]  # probability of >50K
+        st.write(f"DEBUG: Probability of >50K = {proba:.4f}")  # optional debug
+
+        # Adjusted threshold
         result = ">50K" if proba >= 0.4 else "<=50K"
+
 
         if result == ">50K":
             st.markdown(

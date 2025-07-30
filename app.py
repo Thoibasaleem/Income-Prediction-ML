@@ -108,8 +108,7 @@ with col2:
     st.subheader("Prediction")
     if st.button("Predict Income 🚀"):
         proba = pipeline.predict_proba(input_data)[0][1]  # probability of >50K
-        st.write(f"DEBUG: Probability of >50K = {proba:.4f}")  # optional debug
-
+        
         # Adjusted threshold
         result = ">50K" if proba >= 0.4 else "<=50K"
 

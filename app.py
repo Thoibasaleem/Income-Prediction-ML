@@ -97,11 +97,8 @@ input_data = pd.DataFrame([{
 }])
       # must match training
 
-st.write("DEBUG: Input Data")
-st.write(input_data)
 
-proba = pipeline.predict_proba(input_data)[0][1]
-st.write("DEBUG: Probability of >50K =", proba)
+
 
 # ---- Prediction ----
 with col2:
